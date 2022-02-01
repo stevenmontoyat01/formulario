@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilos.css">
+    <title>formulario</title>
+</head>
+<body>
+    <header> <h1 class="center_h1"> FORMULARIO </h1> </header>
+    <main class="principal">
+        <h2> INFORMACION PERSONAL </h2>
+        <br>
+        <form>
+            <label for="nombre"><b> nombre </b></label>
+            <input type="text" placeholder="digite su nombre" id="nombre" class="input_dis"><br>
+            <label for="apellido"><b> apellidos </b></label>
+            <input type="text" id="apellido" placeholder="digite su apellido" class="input_dis"><br>
+            <label for="fecha de nacimiento"><b> fecha de nacimiento </b></label>
+            <input type="week" id="fecha" class="input_dis"><br>
+            <label for="genero"><b> genero </b></label>
+            <select name="genero" id="genero" class="input_dis">
+                <option value="masculino"> masculino </option>
+                <option value="femenino"> femenino </option>
+                <option value="otro"> otro </option>
+            </select>
+        </form>
+        <h2> INFORMACION ADICIONAL </h2>
+        <form>
+            <label for="celular"><b> numero movil </b></label>
+            <input type="tel" id="celular" maxlength="20" class="input_dis"><br>
+            <label for="telefono"><b> telefono </b></label>
+            <input type="tel" id="telefono" maxlength="15" class="input_dis"><br>
+            <label for="estado"><b> estado civil </b></label>
+            <select name="estado" id="estado" class="input_dis">
+                <option value="soltero">soltero</option>
+                <option value="casado">casado</option>
+                <option value="viudo">viudo</option>
+                <option value="divorciado">divorciado</option>
+            </select><br>
+            <label for="ubicacion"><b>¿ usted se encuentra fuera del pais ?</b></label>
+            <label for="si"><b>si</b></label>
+            <input type="radio" id="si" name="pregunta">
+            <label for="no"><b>no</b></label>
+            <input type="radio" id="no" name="pregunta">
+        </form>
+    </main>
+</body>
+</html>

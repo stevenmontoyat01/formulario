@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(7, 6, 6);
+    width: 95%;
+    font-size: 23px;
+}
+
+header{
+    background-color: #fff;
+    margin: 30px 0 0 30px;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    border-radius: 2px;
+    border: 3px solid #fff;
+}
+
+.principal{
+    width: 800px;
+    margin: 25px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    background: #fff;
+    box-shadow: 8px 9px 7px 0 rgb(170, 0, 0);
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(59, 6, 6);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+label{
+    margin-right: 15px;
+}
+
+.input_dis{
+    border: 2px solid #000;
+    border-radius: 4px;
+    height: 20px;
+}
