@@ -54,6 +54,21 @@ h2{
     border-radius: 3px;
 }
 
+.div_contenedor_h2{
+    width: 50%;
+}
+
+.h2_contenedor{
+    background-color: rgb(22, 20, 20);
+    color: #fff;
+    width: 40%;
+    font-size: 20px;
+    font-family: initial;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
 .label{
     color: #000;
     font-size: 19px;
