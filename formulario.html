@@ -8,43 +8,92 @@
     <title>formulario</title>
 </head>
 <body>
-    <header> <h1 class="center_h1"> FORMULARIO </h1> </header>
-    <main class="principal">
-        <h2> INFORMACION PERSONAL </h2>
-        <br>
-        <form>
-            <label for="nombre"><b> nombre </b></label>
-            <input type="text" placeholder="digite su nombre" id="nombre" class="input_dis"><br>
-            <label for="apellido"><b> apellidos </b></label>
-            <input type="text" id="apellido" placeholder="digite su apellido" class="input_dis"><br>
-            <label for="fecha de nacimiento"><b> fecha de nacimiento </b></label>
-            <input type="week" id="fecha" class="input_dis"><br>
-            <label for="genero"><b> genero </b></label>
-            <select name="genero" id="genero" class="input_dis">
-                <option value="masculino"> masculino </option>
-                <option value="femenino"> femenino </option>
-                <option value="otro"> otro </option>
-            </select>
-        </form>
-        <h2> INFORMACION ADICIONAL </h2>
-        <form>
-            <label for="celular"><b> numero movil </b></label>
-            <input type="tel" id="celular" maxlength="20" class="input_dis"><br>
-            <label for="telefono"><b> telefono </b></label>
-            <input type="tel" id="telefono" maxlength="15" class="input_dis"><br>
-            <label for="estado"><b> estado civil </b></label>
-            <select name="estado" id="estado" class="input_dis">
-                <option value="soltero">soltero</option>
-                <option value="casado">casado</option>
-                <option value="viudo">viudo</option>
-                <option value="divorciado">divorciado</option>
-            </select><br>
-            <label for="ubicacion"><b>¿ usted se encuentra fuera del pais ?</b></label>
-            <label for="si"><b>si</b></label>
-            <input type="radio" id="si" name="pregunta">
-            <label for="no"><b>no</b></label>
-            <input type="radio" id="no" name="pregunta">
-        </form>
-    </main>
+    <div id="contenedor_1">
+        <article>
+                <h2> informacion personal </h2>
+                <div class="contenedor_2">
+                    <div id="contenedor_preguntas">
+                        <form>
+                            <div class="contenedor_parrf">
+                                <label for="name" class="label"> nombre: </label>
+                            </div>
+                                <input type="text" id="name" placeholder="ingrese su nombre" class="input">
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="apelidos" class="label"> apelliodos: </label>
+                            </div class="contenedor_parrf">
+                                <input type="text" id="apellidos" placeholder="ingrese sus apellidos" class="input">
+                                <br>
+                            <div id="contenido_fecha">
+                                <label for="fecha_nacimiento" class="label"> fecha de nacimiento: </label>
+                            </div>
+                                <input type="date" id="fecha_nacimiento" class="input">
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="edad" class="label"> edad:</label>
+                            </div>
+                                <input type="number" id="edad" class="input">
+                                <br>
+                                <br>
+                        </form>
+                    </div>
+                </div>
+                <h2> informacion basica </h2>
+                <div class="contenedor_2">
+                    <div class="contenedor_preguntas">
+                        <form>
+                            <div class="contenedor_parrf">
+                                <label for="correo_electronico" class="label">correo electronico:</label>
+                            </div>
+                                <input type="email" id="correo_electronico" maxlength="50" class="input">
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="departamento" class="label">departamento:</label>
+                            </div>
+                                <select name="departamento" id="departameto" class="option">
+                                    <option value="quindio"> quindio </option>
+                                    <option value="antioquia"> antioquia </option>
+                                    <option value="arauca"> arauca </option>
+                                    <option value="caldas"> caldas </option>
+                                    <option value="boyaca"> boyaca </option>
+                                    <option value="santander"> santander </option>
+                                    <option value="nariño"> nariño </option>
+                                    <option value="putumato"> putumayo </option>
+                                    <option value="tolima"> tolima </option>
+                                </select>
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="genero" class="label"> genero: </label>
+                            </div>
+                                <select name="genero" id="genero" class="option">
+                                    <option value="masculino"> masculino </option>
+                                    <option value="femenino"> femenino </option>
+                                    <option value="otro"> otro </option>
+                                </select>
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="residencia" class="label">residencia:</label>
+                            </div>
+                                <input type="text" max="40" class="input">
+                                <br>
+                            <div class="contenedor_parrf">
+                                <label for="confirmcion" class="label">¿desea usted que sus datos sean compartidos?</label>
+                            </div>
+                            <div class="contenedor_parrf">
+                                <label for="si" class="label">si</label>
+                                <input type="radio" id="si" name="pregunta" class="radio_input">
+                                <label for="no" class="label">no</label>
+                                <input type="radio" id="no" name="pregunta" class="radio_input">
+                            </div>
+                            <br>
+                            <div class="contenedor_parrf2">
+                                <button type="submit" class="button" value="enviar"> enviar </button>
+                                <button type="reset" class="button" value="borrar"> borrar </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </article>
+    </div>
 </body>
 </html>
